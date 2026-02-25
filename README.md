@@ -12,4 +12,4 @@
 Frontend - npm run dev
 Backend - php artisan serve
 
-Before running serve install node modules - npm i
+Before running server install node modules - npm i
