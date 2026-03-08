@@ -33,7 +33,7 @@ function Login() {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card shadow p-4" style={{ width: "380px" }}>
-        <h3 className="text-center mb-4">Login</h3>
+        <h3 className="text-center mb-4">User Login</h3>
 
         <form onSubmit={handleLogin}>
           <div className="mb-3">
