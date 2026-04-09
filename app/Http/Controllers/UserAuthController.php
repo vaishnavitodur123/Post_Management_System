@@ -31,7 +31,7 @@ class UserAuthController extends Controller
     {
         $validator = Validator::make($request->all(), [
             "name" => "required|string|min:3|max:60",
-            "email" => "required|email",
+            "email" => "required|email|unique:users",
             "password" => "required|string|min:8|confirmed"
         ]);
 

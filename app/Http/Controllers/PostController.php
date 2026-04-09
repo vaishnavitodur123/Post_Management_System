@@ -30,7 +30,7 @@ class PostController extends Controller
 
     public function getAllPost()
     {
-        $post = Post::paginate(3);
+        $post = Post::paginate(7);
         return response()->json([
             'current_page' => $post->currentPage(),
             'per_page' => $post->perPage(),

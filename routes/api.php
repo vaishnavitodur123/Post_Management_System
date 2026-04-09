@@ -15,10 +15,10 @@ Route::post("/login", [UserAuthController::class, "login"]);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/post', [PostController::class, 'AddPost']);
-    Route::get('/allpost', [PostController::class, 'getAllPost']);
-    Route::delete('/deletepost/{id}', [PostController::class, 'deletePost']);
-    Route::get('/getpost/{id}', [PostController::class, 'GetPost']);
-    Route::put('/editpost/{id}', [PostController::class, 'EditPost']);
+    Route::get('/posts', [PostController::class, 'getAllPost']);
+    Route::delete('/post/{id}', [PostController::class, 'deletePost']);
+    Route::get('/post/{id}', [PostController::class, 'GetPost']);
+    Route::put('/post/{id}', [PostController::class, 'EditPost']);
     Route::post('/logout', [UserAuthController::class, 'logout']);
 
 });
